@@ -1,0 +1,295 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+CREATE TABLE `commonweb_actu` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `titre` char(20) NOT NULL,
+  `message` longtext NOT NULL,
+  `titre_lien` char(20) NOT NULL,
+  `lien_photo` longtext NOT NULL,
+  `lien_video` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime DEFAULT NULL,
+  `groupe` char(16) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=144 ;
+
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(83, 'infobulle', 'CSS infobulle pour l''inscription ', '', '', '', '2013-01-06 22:00:42', NULL, 'Public', 'Minkus59');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(87, 'bon plan', 'cree une image ''BON PLAN'' a charger si pas d''image', '', '', '', '2013-01-07 16:31:43', NULL, 'Public', 'Minkus59');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(105, 'Mail', 'mail dans courier indesirable A Voir', '', '', '', '2013-01-20 14:01:04', NULL, 'Public', 'Minkus59');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(107, '1er contact', 'wouaaaa ca a bien avancer', '', '', '', '2013-01-20 14:06:43', NULL, 'Public', 'Flootz5959');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(111, 'truc de truc', 'qui cherche trouve? c ici les actualité?', '', '', '', '2013-01-20 14:40:25', '0000-00-00 00:00:00', 'Public', 'Flootz5959');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `mod???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†????????????????ified`, `groupe`, `pseudo_id`) VALUES(112, 'je vois', 'je vois tes message mes je pe pas faire de commentaire\r\n', '', '', '', '2013-01-20 14:41:25', NULL, 'Public', 'Flootz5959');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(116, 'ami(e)s en lignes', 'serais cool de voir les ami(e)s qui sont en ligne\r\n', '', '', '', '2013-01-20 17:28:29', NULL, 'Public', 'Flootz5959');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(117, 'touche entrer', 'touche entrer valide pour le chatou double touche entrer pour valider', '', '', '', '2013-01-20 17:29:34', NULL, 'Public', 'Flootz5959');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(119, 'Cree', 'Faire un control parentale\r\narray remplace les mon choisie', '', '', '', '2013-01-22 18:45:23', NULL, 'Prive¤Minkus51', 'Minkus51');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(120, 'Actu', 'Faire un explode pour les actu pour lien divers', '', '', '', '2013-01-22 19:56:09', NULL, 'Prive¤Minkus51', 'Minkus51');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(124, 'refresh', 'Div refresh ? possible', '', '', '', '2013-01-23 13:26:07', NULL, 'Public', 'Minkus51');
+INSERT INTO `commonweb_actu` (`id`, `titre`, `message`, `titre_lien`, `lien_photo`, `lien_video`, `created`, `modified`, `groupe`, `pseudo_id`) VALUES(136, 'Actu groupe', 'OK\r\nrevoir juste la suppression des membre des groupe', '', '', '', '2013-01-26 15:49:14', NULL, 'Prive¤Minkus51', 'Minkus51');
+
+CREATE TABLE `commonweb_actu_comm` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_actu`???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†????????????????? int(10) NOT NULL,
+  `message` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=46 ;
+
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(28, 79, 'faire en sorte de separer les video du reste des actu', '2012-12-28 18:16:17', 'Minkus59');
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(30, 81, 'mettre les info des page genre position du curseur et page courant pour les retrouver apres deco ou rechargement de page', '2013-01-14 02:01:18', 'Minkus59');
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(33, 107, 'tu peux intervenir dans le texte?\r\n', '2013-01-20 14:18:39', 'Flootz5959');
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(37, 107, 'Test oui', '2013-01-22 16:55:18', 'Minkus51');
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(40, 105, 'ou prévenir l''internaute que le mail est dans les CI et l''inviter a ajouter a ses amis dans ses mail', '2013-01-27 17:26:30', 'Minkus59');
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(41, 106, 'et post via NOW a inclure dans la table modifier la ligne NOW de la cnx', '2013-01-27 17:27:39', 'Minkus59');
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(42, 139, 'boucle nombre d''amie pour nombre d''insertion', '2013-01-27 17:28:53', 'Minkus59');
+INSERT INTO `commonweb_actu_comm` (`id`, `id_actu`, `message`, `created`, `pseudo_id`) VALUES(45, 116, '@mysql_query("UPDATE commonweb_user SET derniere_cnx = NOW() WHERE pseudo = ''".$Pseudo."''");\r\na chaque modif pour avoir une trace des dernier mouvenment', '2013-01-28 22:19:33', 'Minkus51');
+
+CREATE TABLE `commonweb_actu_like` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `id_act???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†?????????????????u` int(32) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=58 ;
+
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(25, 31, 'Minkus59');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(29, 79, 'Minkus59');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(30, 87, 'Minkus59');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(31, 93, 'Minkus59');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(33, 107, 'Flootz5959');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(39, 117, 'Minkus51');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(52, 120, 'Minkus51');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(54, 119, 'Minkus51');
+INSERT INTO `commonweb_actu_like` (`id`, `id_actu`, `pseudo_id`) VALUES(56, 124, 'Minkus51');
+
+CREATE TABLE `commonweb_album` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` char(20) NOT NULL,
+  `mini_chemin` longtext NOT NULL,
+  `chemin` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `groupe` char(20) NOT NULL,
+  `commentaire` longtext,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
+
+INSERT INTO `commonweb_album` (`id`, `nom`, `mini_chemin`, `chemin`, `created`, `groupe`, `commentaire`, `pseudo_id`) VALUES(26, '', 'http://www.3donweb.fr/Commonweb/Minkus/Album/mini_photo/857cac3a62324824098d6b9744ad8a00Penguins.jpg', 'http://www.3donweb.fr/Commonweb/Minkus/Album/photo/857cac3a62324824098d6b9744ad8a00Penguins.jpg', '2012-12-11 15:02:33', 'Public', NULL, 'Minkus59');
+INSERT INTO `commonweb_album` (`id`, `nom`, `mini_chemin`, `chemin`, `created`, `groupe`, `commentaire`, `pseudo_id`) VALUES(27, '', 'http://www.3donweb.fr/Commonweb/Minkus/Album/mini_photo/6de990e083ab1da55fb8038c688d0086gif-animaux-123.gif', 'http://www.3donweb.fr/Common???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†?????????????????web/Minkus/Album/photo/6de990e083ab1da55fb8038c688d0086gif-animaux-123.gif', '2012-12-12 10:25:55', 'Public', NULL, 'Minkus59');
+INSERT INTO `commonweb_album` (`id`, `nom`, `mini_chemin`, `chemin`, `created`, `groupe`, `commentaire`, `pseudo_id`) VALUES(28, '', 'http://www.3donweb.fr/Commonweb/Minkus/Album/mini_photo/ccecaf75768efb1b3c9831d4e96fcc57Desert.jpg', 'http://www.3donweb.fr/Commonweb/Minkus/Album/photo/ccecaf75768efb1b3c9831d4e96fcc57Desert.jpg', '2012-12-12 22:55:17', 'Public', NULL, 'Minkus59');
+INSERT INTO `commonweb_album` (`id`, `nom`, `mini_chemin`, `chemin`, `created`, `groupe`, `commentaire`, `pseudo_id`) VALUES(35, 'test mobile', 'http://www.3donweb.fr/Commonweb/Minkus/Album/mini_photo/96698dc9b328221d49b5268dfb16dd7f20130119_100150.jpg', 'http://www.3donweb.fr/Commonweb/Minkus/Album/photo/96698dc9b328221d49b5268dfb16dd7f20130119_100150.jpg', '2013-01-19 17:20:54', 'Public', 'test mobile', 'Minkus59');
+INSERT INTO `commonweb_album` (`id`, `nom`, `mini_chemin`, `chemin`, `created`, `groupe`, `commentaire`, `pseudo_id`) VALUES(37, 'un cheval', 'http://www.3donweb.fr/Commonweb/Minkus/Album/mini_photo/6eb5498f98ea3e49275a0f5a4e27bae6400_F_36695594_julF6HeRkYJ5aJbl5C0DYFJIhWsDMYtv.jpg', 'http://www.3donweb.fr/Commonweb/Minkus/Album/photo/6eb5498f98ea3e49275a0f5a4e27bae6400_F_36695594_julF6HeRkYJ5aJbl5C0DYFJIhWsDMYtv.jpg', '2013-01-20 14:07:12', 'Public', '', 'Flootz5959');
+INSERT INTO `commonweb_album` (`id`, `nom`, `mini_chemin`, `chemin`, `created`, `groupe`, `commentaire`, `pseudo_id`) VALUES(38, 'de la 3d', 'http://www.3donweb.fr/Commonweb/Minkus/Album/mini_photo/9635bdedbc912fe2cf961860f86177afsaloonetmaison1.jpg', 'http://www.3donweb.fr/Commonweb/Minkus/Album/photo/9635bdedbc912fe2cf961860f86177afsaloonetmaison1.jpg', '2013-01-20 14:07:36', 'Public', '', 'Flootz5959');
+INSERT INTO `commonweb_album` (`id`, `nom`, `mini_chemin`, `chemin`, `created`, `groupe`, `commentaire`, `pseudo_id`) VALUES(42, 'test groupe', 'http://www.3donweb.fr/Commonweb/Minkus/Album/mini_photo/1d402a3468a6790e23a450???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†?????????????????457e53abcdcasa presto.jpg', 'http://www.3donweb.fr/Commonweb/Minkus/Album/photo/1d402a3468a6790e23a450457e53abcdcasa presto.jpg', '2013-01-29 01:09:30', 'Prive¤Minkus51', 'test groupe casa', 'Minkus51');
+
+CREATE TABLE `commonweb_album_like` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `id_album` int(32) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+
+INSERT INTO `commonweb_album_like` (`id`, `id_album`, `pseudo_id`) VALUES(2, 26, 'Minkus59');
+INSERT INTO `commonweb_album_like` (`id`, `id_album`, `pseudo_id`) VALUES(3, 28, 'Minkus59');
+INSERT INTO `commonweb_album_like` (`id`, `id_album`, `pseudo_id`) VALUES(13, 28, 'Minkus51');
+INSERT INTO `commonweb_album_like` (`id`, `id_album`, `pseudo_id`) VALUES(14, 26, 'Minkus51');
+
+CREATE TABLE `commonweb_amis` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pseudo_amis` char(16) NOT NULL,
+  `created` datetime NOT NULL,
+  `groupe` longtext NOT NULL,
+  `accept` int(1) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=300 ;
+
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(57, 'Minkus51', '2013-01-20 14:51:32', 'Public', 1, 'Flootz5959');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(58, 'Flootz5959', '2013-01-20 14:53:17', 'Public', 1, 'Minkus51');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(106, 'Minkus51', '2013-01-26 13:26:49', 'Minkus51', 1, 'Minkus51');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(109, 'Minkus59', '2013-01-26 15:18:14', 'Minkus59', 1, 'Minkus59');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(110, 'Flootz5959', '2013-01-26 15:07:20', 'Flootz5959', 1, 'Flootz5959');
+INSERT INTO `commonweb_am???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†?????????????????is` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(289, 'Minkus51', '2013-01-28 23:53:16', 'Public', 1, 'Minkus59');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(290, 'Minkus59', '2013-01-28 23:53:16', 'Public', 1, 'Minkus51');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(291, 'Minkus51', '2013-01-29 00:00:08', 'Prive¤Minkus51', 1, 'Minkus51');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(295, 'Flootz5959', '2013-01-29 00:10:33', 'Public', 1, 'Minkus59');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(296, 'Minkus59', '2013-01-29 00:10:33', 'Public', 1, 'Flootz5959');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(297, 'Minkus59', '2013-01-29 01:13:55', 'Prive¤Minkus51', 1, 'Minkus51');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(298, 'Minkus51', '2013-01-29 01:13:55', 'Prive¤Minkus51', 1, 'Minkus59');
+INSERT INTO `commonweb_amis` (`id`, `pseudo_amis`, `created`, `groupe`, `accept`, `pseudo_id`) VALUES(299, 'Minkus59', '2013-01-29 01:13:55', 'Prive¤Minkus51', 1, 'Minkus59');
+
+CREATE TABLE `commonweb_bon_plan` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` varchar(16) DEFAULT NULL,
+  `adresse` tinytext,
+  `ville` varchar(35) DEFAULT NULL,
+  `cp` char(8) DEFAULT NULL,
+  `categorie` varchar(30) DEFAULT NULL,
+  `sous_categorie` varchar(30) DEFAULT NULL,
+  `complement_adresse` varchar(80) DEFAULT NULL,
+  `telephone` char(10) DEFAULT NULL,
+  `site_web` varchar(50) DEFAULT NULL,
+  `image` longtext,
+  `created` datetime DEFAULT NULL,
+  `date_fin` char(10) DEFAULT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=383 ;
+
+INSERT INTO `commonweb_bon_plan` (`id`, `???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†?????????????????nom`, `adresse`, `ville`, `cp`, `categorie`, `sous_categorie`, `complement_adresse`, `telephone`, `site_web`, `image`, `created`, `date_fin`, `pseudo_id`) VALUES(379, 'Je Console', '22 rue Gambetta', 'Epernay', '51200', 'Autres', 'Detaillant', '', '0326552070', 'www.je-console.fr', 'http://www.3donweb.fr/Commonweb/Minkus/Bon_plan/mini_image/6aee7e22893504301941c7db245bd9fajoyeusefinmonde2012[1].jpg', '2012-12-22 14:41:29', '29/12/2012', 'Minkus59');
+INSERT INTO `commonweb_bon_plan` (`id`, `nom`, `adresse`, `ville`, `cp`, `categorie`, `sous_categorie`, `complement_adresse`, `telephone`, `site_web`, `image`, `created`, `date_fin`, `pseudo_id`) VALUES(382, 'chez flootz', '2 rue des cotes au beurre', 'lille', '59000', 'Restauration', 'Autres', '', '0607080910', 'www.leflootz.beu', 'http://www.3donweb.fr/Commonweb/Minkus/Bon_plan/mini_image/7d0834c38b79674d068fc4c81a540bbesaloonetmaison1.jpg', '2013-01-20 14:39:09', '', 'Flootz5959');
+
+CREATE TABLE `commonweb_bon_plan_like` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `id_bon_plan` int(32) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=34 ;
+
+INSERT INTO `commonweb_bon_plan_like` (`id`, `id_bon_plan`, `pseudo_id`) VALUES(28, 379, 'Flootz5959');
+INSERT INTO `commonweb_bon_plan_like` (`id`, `id_bon_plan`, `pseudo_id`) VALUES(29, 379, 'Minkus51');
+INSERT INTO `commonweb_bon_plan_like` (`id`, `id_bon_plan`, `pseudo_id`) VALUES(30, 382, 'Minkus51');
+INSERT INTO `commonweb_bon_plan_like` (`id`, `id_bon_plan`, `pseudo_id`) VALUES(32, 382, 'Minkus59');
+INSERT INTO `commonweb_bon_plan_like` (`id`, `id_bon_plan`, `pseudo_id`) VALUES(33, 379, 'Minkus59');
+
+CREATE TABLE `commonweb_groupe` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=203 ;
+
+INSERT INTO `commonweb_groupe` (`id`, `nom`, `created`, `pseudo_id`)???????b?????????????????????????????????†????????????????????????????†???????????????????????†??????????????†????????????????????????????????????†??????????????????????????†???????????????????????†??????????????????????????????????????????????????????†?????4??????????????????†????????????????????????????†??????????????†?????????????????????????????????????†????????????????? VALUES(40, 'Public', '2013-01-18 00:17:23', 'Admin');
+INSERT INTO `commonweb_groupe` (`id`, `nom`, `created`, `pseudo_id`) VALUES(200, 'Prive¤Minkus51', '2013-01-29 00:00:08', 'Minkus51');
+INSERT INTO `commonweb_groupe` (`id`, `nom`, `created`, `pseudo_id`) VALUES(202, 'Prive¤Minkus51', '2013-01-29 01:13:55', 'Minkus59');
+
+CREATE TABLE `commonweb_menu` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` char(16) NOT NULL,
+  `lien` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+INSERT INTO `commonweb_menu` (`id`, `nom`, `lien`) VALUES(1, 'Accueil', 'http://www.3donweb.fr/Commonweb/Minkus/Accueil/');
+INSERT INTO `commonweb_menu` (`id`, `nom`, `lien`) VALUES(2, 'Renseignement', 'http://www.3donweb.fr/Commonweb/Minkus/Renseignement/');
+INSERT INTO `commonweb_menu` (`id`, `nom`, `lien`) VALUES(3, 'Album', 'http://www.3donweb.fr/Commonweb/Minkus/Album/');
+INSERT INTO `commonweb_menu` (`id`, `nom`, `lien`) VALUES(4, 'Bon plan', 'http://www.3donweb.fr/Commonweb/Minkus/Bon_plan/');
+INSERT INTO `commonweb_menu` (`id`, `nom`, `lien`) VALUES(6, 'Gestion', 'http://www.3donweb.fr/Commonweb/Minkus/Gestion/');
+INSERT INTO `commonweb_menu` (`id`, `nom`, `lien`) VALUES(7, 'Tchat', 'http://www.3donweb.fr/Commonweb/Minkus/tchat/');
+INSERT INTO `commonweb_menu` (`id`, `nom`, `lien`) VALUES(9, 'Deconnexion', 'http://www.3donweb.fr/Commonweb/Minkus/deconnexion.php');
+
+CREATE TABLE `commonweb_perso` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` varchar(16) DEFAULT NULL,
+  `prenom` varchar(16) DEFAULT NULL,
+  `adresse` tinytext,
+  `ville` varchar(35) DEFAULT NULL,
+  `cp` char(8) DEFAULT NULL,
+  `complement_adresse` varchar(80) DEFAULT NULL,
+  `telephone_perso` char(10) DEFAULT NULL,
+  `telephone_pro` char(10) DEFAULT NULL,
+  `site_web` varchar(50) DEFAULT NULL,
+  `situation_pro` varchar(30) DEFAULT NULL,
+  `situation_amour` varchar(20) DEFAULT NULL,
+  `proverbe` char(200) DEFAULT NULL,
+  `mot_du_jour` char(30) DEFAULT NULL,
+  `descr????????? VALUES(40, 'Public', '2013-01-18 00:17:23', 'Admin');
+INSERT INTO `commonweb_groupe` (`id`, `nom`, `created`, `pseudo_id`) VALUES(200, 'Prive¤Minkus51', '2013-01-29 00:00:08', 'Minkus51');
+INSERT INTO `commonweb_groupe` (`id`, `nom`, `created`, `pseudo_id`) VALUES(202, 'Prive¤Minkus51', '2013-01-29 01:13:55', 'Minkus59');
+
+CREATE TABLE `commonweb_menu` (
+iption` text,
+  `email_secourt` varchar(50) DEFAULT NULL,
+  `avatar` longtext,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `pseudo_id` (`pseudo_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=155 ;
+
+INSERT INTO `commonweb_perso` (`id`, `nom`, `prenom`, `adresse`, `ville`, `cp`, `complement_adresse`, `telephone_perso`, `telephone_pro`, `site_web`, `situation_pro`, `situation_amour`, `proverbe`, `mot_du_jour`, `description`, `email_secourt`, `avatar`, `pseudo_id`) VALUES(86, 'Helinckx', 'Michael', '22 rue francois bonal', 'Epernay', '51200', '1er etage', '0652942692', '0326552070', 'www.3donweb.fr', 'CDI', 'Celibataire', 'mieu vaut etre seul que mal accompagne', 'je test', NULL, 'Minkus59@hotmail.com', 'http://www.3donweb.fr/Commonweb/Minkus/Renseignement/avatar/cbe14c1f398d026f5d47d3fc12dba1fbPenguins.jpg', 'Minkus59');
+INSERT INTO `commonweb_perso` (`id`, `nom`, `prenom`, `adresse`, `ville`, `cp`, `complement_adresse`, `telephone_perso`, `telephone_pro`, `site_web`, `situation_pro`, `situation_amour`, `proverbe`, `mot_du_jour`, `description`, `email_secourt`, `avatar`, `pseudo_id`) VALUES(153, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://www.3donweb.fr/Commonweb/Minkus/Renseignement/avatar/abe14d471d8c5a1ff254f40ec47f1556Koala.jpg', 'Minkus51');
+INSERT INTO `commonweb_perso` (`id`, `nom`, `prenom`, `adresse`, `ville`, `cp`, `complement_adresse`, `telephone_perso`, `telephone_pro`, `site_web`, `situation_pro`, `situation_amour`, `proverbe`, `mot_du_jour`, `description`, `email_secourt`, `avatar`, `pseudo_id`) VALUES(154, 'debeusscher', 'Frantz', '73 rue des machines', 'Lille', '59000', '5 eme sous sol', '', '', 'www.frantz59.fr', 'Autre', 'Celibataire', 'je vois , je tue', 'que c''est bio', NULL, '', 'http://www.3donweb.fr/Commonweb/Minkus/Renseignement/avatar/85cce18176b1f1c7bff014e2cc58e372boxing-club-a-touleji8uma2-fond.jpg', 'Flootz5959');
+
+CREATE TABLE `commonweb_securite` (
+  `id` int(32) unsigned NOT NULL ?????????AUTO_INCREMENT,
+  `hote` varchar(15) NOT NULL,
+  `pseudo_id` varchar(16) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
+
+INSERT INTO `commonweb_securite` (`id`, `hote`, `pseudo_id`) VALUES(1, '88.162.162.60', 'Minkus59');
+INSERT INTO `commonweb_securite` (`id`, `hote`, `pseudo_id`) VALUES(9, '82.236.164.179', 'Minkus59');
+INSERT INTO `commonweb_securite` (`id`, `hote`, `pseudo_id`) VALUES(10, '82.250.145.182', 'Minkus59');
+INSERT INTO `commonweb_securite` (`id`, `hote`, `pseudo_id`) VALUES(19, '37.8.162.85', 'Minkus59');
+INSERT INTO `commonweb_securite` (`id`, `hote`, `pseudo_id`) VALUES(27, '88.162.162.60', 'Minkus51');
+INSERT INTO `commonweb_securite` (`id`, `hote`, `pseudo_id`) VALUES(28, '82.239.19.56', 'Flootz5959');
+INSERT INTO `commonweb_securite` (`id`, `hote`, `pseudo_id`) VALUES(29, '82.236.164.179', 'Minkus51');
+
+CREATE TABLE `commonweb_tchat` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `message` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=44 ;
+
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(3, 'salut', '2013-01-20 16:11:42', 'Minkus59');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(5, 't là', '2013-01-20 16:34:25', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(6, 'coucou', '2013-01-20 16:34:32', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(7, 're', '2013-01-20 16:36:13', 'Minkus59');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(8, 'je fais mon sport', '2013-01-20 16:36:25', 'Minkus59');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(9, 're', '2013-01-20 17:15:55', 'Minkus59');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(11, 're', '2013-01-20 17:28?????????:57', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(12, 'alors ton sport, tu fais koi,? ', '2013-01-20 17:30:46', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(13, 'UFC training', '2013-01-20 17:33:28', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(14, 'je vais prendre un douche', '2013-01-20 17:35:28', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(15, 'c un jeu sport', '2013-01-20 17:36:09', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(16, 'ah ca y es il neige ici', '2013-01-20 17:40:04', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(17, 'depuis vendredi ca arrive par vague', '2013-01-20 17:45:29', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(18, 'test http;//www.frantz59.fr', '2013-01-20 17:46:11', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(19, 'pas de liens?', '2013-01-20 17:46:25', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(20, 'pas de liens?', '2013-01-20 17:48:06', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(21, 'llll', '2013-01-20 17:48:37', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(22, 'www.frantz59.fr yyyyyyyyyyyy', '2013-01-20 17:51:15', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(23, 'voila', '2013-01-20 17:52:01', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(24, 'j''avais deja vu', '2013-01-20 17:53:09', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(25, 'et ta derniere video beug', '2013-01-20 17:53:21', 'Minkus51');
+INSERT ?????????INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(26, 'test', '2013-01-20 17:53:23', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(27, 'ah c revenu', '2013-01-20 17:53:42', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(28, 'je vai sacheter du pain', '2013-01-20 17:53:50', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(29, 'oki', '2013-01-20 17:54:37', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(30, 'www.frantz59.fr', '2013-01-20 17:55:01', 'Flootz5959');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(31, 'petite amelioration faire page gestion', '2013-01-22 16:04:37', 'Minkus59');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(33, 'Grosse modif pour module final page acceuil sur actualite', '2013-01-22 18:06:42', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(34, 'Salut man j''ai mis dans Actualiter les idee si tu en vois une qui t''es realisable fais le', '2013-01-23 00:19:10', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(35, 'bon j''ai une erreur mais j''ai bien bosser je vais me coucher ^^', '2013-01-23 02:02:43', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(36, 'finalement j''ai bloquer sur le pb cca a l''air resolut je testerai demain', '2013-01-23 02:16:52', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(37, 'tout a l''air correct', '2013-01-23 18:27:41', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(38, 'a tester avec des utilisateur multiple', '2013-01-23 18:28:02', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(39, 'erreur message de groupe prive a af?????????fiche ch public amis', '2013-01-23 23:11:11', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(40, 'je vien d''apprendre comment cree des fonction hihi c genial se truc', '2013-01-27 19:08:07', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(41, 'OUFffffffffffffffffffff', '2013-01-29 00:11:57', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(42, '4jour de prise de tete non stop', '2013-01-29 00:12:12', 'Minkus51');
+INSERT INTO `commonweb_tchat` (`id`, `message`, `created`, `pseudo_id`) VALUES(43, 'enfin fini et resolut pour la gestion des groupe et amis', '2013-01-29 00:12:39', 'Minkus51');
+
+CREATE TABLE `commonweb_user` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `hash` char(32) NOT NULL,
+  `pseudo` varchar(16) NOT NULL,
+  `mdp` char(32) NOT NULL,
+  `jour` int(2) NOT NULL,
+  `mois` text NOT NULL,
+  `annee` char(4) NOT NULL,
+  `genre` char(5) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `created` datetime NOT NULL,
+  `derniere_cnx` datetime DEFAULT NULL,
+  `email_validation` int(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
+
+INSERT INTO `commonweb_user` (`id`, `hash`, `pseudo`, `mdp`, `jour`, `mois`, `annee`, `genre`, `email`, `created`, `derniere_cnx`, `email_validation`) VALUES(1, '2f9f6fc9f037015bb59462fd8747b390', 'Minkus59', '007f6a7040011de3ed1a1124969425ab', 6, 'septembre', '1984', 'Homme', '3donweb@free.fr', '2012-11-05 20:35:59', '2013-01-29 01:29:14', 1);
+INSERT INTO `commonweb_user` (`id`, `hash`, `pseudo`, `mdp`, `jour`, `mois`, `annee`, `genre`, `email`, `created`, `derniere_cnx`, `email_validation`) VALUES(21, '4ba9595996237696c673ab22048a1316', 'Minkus51', '648ceaa6447a6a2004ec51b797c78247', 6, 'septembre', '1984', 'Homme', 'Minkus59@hotmail.com', '2013-01-14 03:12:35', '2013-01-29 01:36:50', 1);
+INSERT INTO `commonweb_user` (`id`, `hash`, `pseudo`, `mdp`, `jour`, `mois`, `annee`, `genre`,????????? `email`, `created`, `derniere_cnx`, `email_validation`) VALUES(22, '81cc68f88c629dd54693905f04706587', 'Flootz5959', '2f346795e98e71b8caee4bcb85cdc9c3', 5, 'avril', '1970', 'Homme', 'rahgar@hotmail.fr', '2013-01-20 13:52:42', NULL, 1);

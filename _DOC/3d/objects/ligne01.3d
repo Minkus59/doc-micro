@@ -1,0 +1,5 @@
+# ligne (horizontale); utile pour représenter une liaison entre 2 objets, en lui appliquant un étirement.
+
+f;128;128;128;true;false;
+p;-5; 0; 0;
+p; 5; 0; 0;

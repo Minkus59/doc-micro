@@ -1,0 +1,337 @@
+/* -------------------------------------  Accueil ------------------------------------------------- */
+body {
+background-color: white;
+background-image: url(../img/img_page/Fond_terre.png); 
+background-repeat: no-repeat;
+}
+
+#cadre_font {
+	background-color: none;
+	width: 1200px;
+	margin-top: -10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+/* ---------  Menu -------- */
+#cadre_menu {
+	padding-top: 10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#cadre_haut {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* ---------  Publicite -------- */
+
+#cadre_pub {
+	float: right;
+	width: 395px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#cadre_int_pub {
+	float: right;
+	width: 365px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* ---------  dessous middle -------- */
+#dessous_middle {
+overflow: auto;
+	width: 1180px;
+height: 800px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* ---------  middle -------- */
+
+#cadre_middle {
+	float: left;
+	width: 745px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* ---------  publication -------- */
+#cadre_post {
+	float: left;
+	width: 715px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+/* ---------  groupe -------- */
+#cadre_groupe {
+	float: left;
+	width: 715px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+/* ---------  Actualite -------- */
+#cadre_actu {
+	float: left;
+	width: 715px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+#cadre_haut li a {
+	list-style-type : none;
+	display: inline;
+	width: 114px;
+	height: 24px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top: 6px;
+	background-color:#009900;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-align:center;
+	background-image: url(../img/img_page/titre_vert.jpg);
+	background-repeat: repeat-x;
+	background-position: center center;
+ }
+
+/* ---------  entete cadre -------- */
+#interrieur_titre {
+	height: 24px;
+	border-radius: 8px 8px 0px 0px;
+	webkit-border-radius: 8px 8px 0px 0px;
+	moz-border-radius: 8px 8px 0px 0px;
+	khtml-border-radius: 8px 8px 0px 0px;
+	background-color: grey;
+	padding-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	/* background-image: url(../img/img_page/titre_vert.jpg); */
+	/* background-repeat: repeat-x; */
+	background-position: center center;
+	color: black;
+}
+
+#interrieur_titre #Titre {
+float: left;
+}
+
+#interrieur_titre #upim {
+float: right;
+}
+
+/* ---------  interrieur cadre -------- */
+#interrieur {
+	border-radius: 0px 0px 8px 8px;
+	webkit-border-radius: 0px 0px 8px 8px;
+	moz-border-radius: 0px 0px 8px 8px;
+	khtml-border-radius: 0px 0px 8px 8px;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	color:black;
+	/* background-image: url(../img/img_page/coin_blanc.png); */
+	/* background-repeat: no-repeat; */
+	background-position: left top;
+	/* background-image:linear-gradient(-60deg, #072322, #333333, #333333, #072322); */
+}
+/* ---------  lien -------- */
+a:link {
+	color:#009900;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#00CC00;
+	text-decoration:none;
+}
+
+a:hover:visited {
+	color:#009900;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#009900;
+	text-decoration:none;
+}
+li {
+	list-style-type: none;
+}
+
+/* ---------  bouton -------- */
+.bouton {
+	display:block;
+	float:right;   
+	width:60px;
+	height: 24px;
+	background-color: #009900;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-align:center;
+	margin-top: 3px;
+	padding:5px;
+	padding-top: 6px;
+	/* background-image: url(../img/img_page/titre_vert.jpg); */
+	/* background-repeat: repeat-x; */
+}
+/* ---------  cadre actu principal -------- */
+#cadre_actu_prin {
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* ---------  pseudo -------- */
+#droite {
+	float: right; 
+}
+/* ---------  avatar -------- */
+#gauche {
+	float: left; 
+	width: 50px;
+}
+/* ---------  message, like, created -------- */
+#middle {
+	float: middle;
+	margin-left: 65px;
+	width: 470px;
+	min-height: 40px;
+	overflow: auto;
+}
+
+/* ---------  cadre actu principal -------- */
+#cadre_comm {
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#cadre_publier textarea {
+width: 695px;
+height: 70px;
+}
+
+/* ---------  avatar com -------- */
+#gauche2 {
+	float: left; 
+	width: 50px;
+	margin-left: 65px;
+}
+/* ---------  message, like, created com -------- */
+#middle2 {
+	float: middle;
+	margin-left: 120px;
+	width: 415px;
+	min-height: 40px;
+	overflow: auto;
+}
+/* ---------  rep com -------- */
+
+#rep {
+	float: left;
+	margin-left: 65px;
+}
+#rep textarea {
+width: 625px;
+height: 50px;
+}
+
+#suppr {
+	background:url("fermer.jpg") no-repeat;
+	float: right;
+	width: 20px;
+	height: 20px;
+}
+
+#ligne {
+	margin-left: 70px;
+	color: #666666;
+}
+
+#ligne_lien {
+	color: #666666;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+
+/* -------------------------------------  Album ------------------------------------------------- */
+
+#cadre_photo {
+	float: left;
+	display:block;
+	width: 220px;
+	margin-left: 11px;
+}
+#cadre_post_photo {
+	width: 690px;
+	text-align: left;
+}
+
+#colone1 {
+	float: left;
+	width: 150px;
+	padding-top: 20px;
+}
+
+#colone2 {
+	float: left;
+	width: 500px;
+	padding-top: 20px;
+}
+
+/* -------------------------------------  Gestion ------------------------------------------------- */
+
+#cadre_amis {
+	float: left;
+	width: 715px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+/* -------------------------------------  Bon plan ------------------------------------------------- */
+
+table {
+color: white;
+}
+
+/* -------------------------------------  fermer ------------------------------------------------- */
+
+#cadre_fermer {
+	float: left;
+	width: 715px;
+}
+
+#cadre_inscription {
+	float: left;
+	width: 715px;
+	display: none;
+}

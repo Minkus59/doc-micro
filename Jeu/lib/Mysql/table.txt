@@ -1,0 +1,187 @@
+CREATE TABLE projet_planete_joueur (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  nom varchar(30) DEFAULT NULL,
+  gh int(10) DEFAULT NULL,
+  gv int(10) DEFAULT NULL,
+  sh int(10) DEFAULT NULL,
+  sv int(10) DEFAULT NULL,
+  ph int(10) DEFAULT NULL,
+  pv int(10) DEFAULT NULL,
+  `user` int(32) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_planete (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  image longtext,
+  nom varchar(30) DEFAULT NULL,
+  description longtext,
+  h int(10) DEFAULT NULL,
+  v int(10) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_system (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  image longtext,
+  nom varchar(30) DEFAULT NULL,
+  description longtext,
+  h int(10) DEFAULT NULL,
+  v int(10) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_galaxie (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  image longtext,
+  nom varchar(30) DEFAULT NULL,
+  description longtext,
+  h int(10) DEFAULT NULL,
+  v int(10) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_batiment (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  image longtext,
+  nom varchar(30) DEFAULT NULL,
+  description longtext,
+  structure int(10) DEFAULT NULL,
+  attaque int(10) DEFAULT NULL,
+  equipage int(10) DEFAULT NULL,
+  bouclier varchar(30) DEFAULT NULL,
+  blindage varchar(30) DEFAULT NULL,
+  armement varchar(30) DEFAULT NULL,
+  consomation int(10) DEFAULT NULL,
+  taille int(10) DEFAULT NULL,
+  temps int(50) DEFAULT NULL,
+  titane int(10) DEFAULT NULL,
+  helium3 int(10) DEFAULT NULL,
+  torium int(10) DEFAULT NULL,
+  fer int(10) DEFAULT NULL,
+  acier int(10) DEFAULT NULL,
+  carbone int(10) DEFAULT NULL,
+  tritium int(10) DEFAULT NULL,
+  coeficient int(10) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_batiments (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  titane int(30) DEFAULT NULL,
+  fer int(30) DEFAULT NULL,
+  torium int(30) DEFAULT NULL,
+  helium3 int(30) DEFAULT NULL,
+  acier int(30) DEFAULT NULL,
+  carbone int(30) DEFAULT NULL,
+  tritium int(30) DEFAULT NULL,
+  hydroponie int(30) DEFAULT NULL,
+  central int(30) DEFAULT NULL,
+  haut_fournaux int(30) DEFAULT NULL,
+  universite int(30) DEFAULT NULL,
+  laboratoire int(30) DEFAULT NULL,
+  caserne int(30) DEFAULT NULL,
+  couveuse int(30) DEFAULT NULL,
+  cyber int(30) DEFAULT NULL,
+  droide int(30) DEFAULT NULL,
+  androide int(30) DEFAULT NULL,
+  planete varchar(30) NOT NULL,
+  `user` int(32) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_defense (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  image longtext NOT NULL,
+  nom varchar(30) NOT NULL,
+  description longtext NOT NULL,
+  structure int(10) NOT NULL,
+  attaque int(10) NOT NULL,
+  equipage int(10) NOT NULL,
+  bouclier varchar(30) NOT NULL,
+  blindage varchar(30) NOT NULL,
+  armement varchar(30) NOT NULL,
+  consomation int(10) NOT NULL,
+  titane int(10) NOT NULL,
+  helium3 int(10) NOT NULL,
+  tritium int(10) NOT NULL,
+  taille int(10) NOT NULL,
+  temps int(50) NOT NULL,
+  coeficient int(10) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_ressource (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  temps int(30) NOT NULL,
+  titane int(30) NOT NULL,
+  fer int(30) NOT NULL,
+  torium int(30) NOT NULL,
+  helium3 int(30) NOT NULL,
+  acier int(30) NOT NULL,
+  `user` int(32) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_technologie (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  image longtext NOT NULL,
+  nom varchar(30) NOT NULL,
+  titane int(10) NOT NULL,
+  helium3 int(10) NOT NULL,
+  tritium int(10) NOT NULL,
+  temps int(50) NOT NULL,
+  coeficient int(10) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_technologies (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  titane int(30) DEFAULT NULL,
+  fer int(30) DEFAULT NULL,
+  torium int(30) DEFAULT NULL,
+  helium3 int(30) DEFAULT NULL,
+  acier int(30) DEFAULT NULL,
+  carbone int(30) DEFAULT NULL,
+  tritium int(30) DEFAULT NULL,
+  hydroponie int(30) DEFAULT NULL,
+  central int(30) DEFAULT NULL,
+  haut_fournaux int(30) DEFAULT NULL,
+  universite int(30) DEFAULT NULL,
+  laboratoire int(30) DEFAULT NULL,
+  caserne int(30) DEFAULT NULL,
+  couveuse int(30) DEFAULT NULL,
+  cyber int(30) DEFAULT NULL,
+  droide int(30) DEFAULT NULL,
+  androide int(30) DEFAULT NULL,
+  `user` int(32) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+CREATE TABLE projet_vaisseau (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  image longtext,
+  nom varchar(30) DEFAULT NULL,
+  description longtext,
+  vitesse int(10) DEFAULT NULL,
+  structure int(10) DEFAULT NULL,
+  attaque int(10) DEFAULT NULL,
+  equipage int(10) DEFAULT NULL,
+  propultion varchar(30) DEFAULT NULL,
+  bouclier varchar(30) DEFAULT NULL,
+  blindage varchar(30) DEFAULT NULL,
+  armement int(10) DEFAULT NULL,
+  capacite int(10) DEFAULT NULL,
+  consomation int(10) DEFAULT NULL,
+  taille int(10) DEFAULT NULL,
+  temps int(50) DEFAULT NULL,
+  titane int(10) DEFAULT NULL,
+  helium3 int(10) DEFAULT NULL,
+  torium int(10) DEFAULT NULL,
+  fer int(10) DEFAULT NULL,
+  acier int(10) DEFAULT NULL,
+  carbone int(10) DEFAULT NULL,
+  tritium int(10) DEFAULT NULL,
+  coeficient int(10) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;

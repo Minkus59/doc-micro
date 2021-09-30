@@ -1,0 +1,15 @@
+lumiere;creer;;
+lumiere;translation;;0;20;0;
+lumiere;allumer;;5;255;255;255;
+;
+objet;charger;;marineris.3d;
+;
+ecran;surlignage;false;
+ecran;eclairer;30;30;30;
+ecran;zoom;800;
+ecran;distance;100;
+ecran;eclairage;scn;
+ecran;format_sortie;png;
+ecran;dimension;640;360;// format 16/9e
+ecran;translation;0;0;0;
+ecran;rotation;0;0;-30;

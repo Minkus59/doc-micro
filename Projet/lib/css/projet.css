@@ -1,0 +1,155 @@
+body {
+background-color: black;
+background-image: url(../img/Fond_terre11.png); 
+background-repeat: no-repeat;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+color: white;
+}
+
+#all {
+width: 900px;
+margin-top: -10px;
+}
+
+#middle {
+background-color: black;
+width: 900px;
+max-height: 590px;
+overflow: auto;
+float: left;
+border: 2px solid;
+border-color: #000000 #B0B0B0 #B0B0B0 #B0B0B0;
+border-radius: 0px 0px 8px 8px;
+webkit-border-radius: 0px 0px 8px 8px;
+moz-border-radius: 0px 0px 8px 8px;
+khtml-border-radius: 0px 0px 8px 8px;
+margin-top: 80px;
+}
+
+#middle #int {
+text-align: justify;
+padding-left: 2%;
+padding-right: 2%;
+padding-top: 10px;
+padding-bottom: 20px;
+}
+
+#footer {
+background-repeat: no-repeat;
+background-image: url(../img/plan2.png); 
+background-position: center;
+width: 900px;
+height: 110px;
+position: absolute;
+bottom: 0px;
+}
+
+#footer_int {
+padding-left: 50px;
+padding-right: 50px;
+}
+
+#Bouton1 {
+position: absolute;
+top: 20px;
+height: 30px;
+width: 30px;
+right: 130px;
+background-repeat: no-repeat;
+background-image: url(../img/bouton_bleu.png); 
+}
+
+#Bouton2 {
+position: absolute;
+top: 20px;
+height: 30px;
+width: 30px;
+right: 90px;
+background-repeat: no-repeat;
+background-image: url(../img/bouton_vert.png); 
+}
+
+#Bouton3 {
+position: absolute;
+top: 20px;
+height: 30px;
+width: 30px;
+right: 50px;
+background-repeat: no-repeat;
+background-image: url(../img/bouton_rouge.png); 
+}
+
+#Maintenance {
+color: white;
+display: block;
+position: absolute;
+width: 200px;
+height: 20px;
+margin-left: 800px;
+padding: 1px;
+background-color: black;
+border-radius: 0px 0px 8px 8px;
+webkit-border-radius: 0px 0px 8px 8px;
+moz-border-radius: 0px 0px 8px 8px;
+khtml-border-radius: 0px 0px 8px 8px;
+box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+border-color: rgba(191, 68, 68, 0.75);
+-moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+#erreur {
+color: red;
+}
+
+.col_1 {
+display: inline-block;
+padding: 3px 0px;
+width: 300px;
+min-height: 1px;
+text-align: right;
+vertical-align: top;
+}
+
+input:focus {
+border-color: rgba(82, 168, 236, 0.75);
+-moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+textarea:focus {
+border-color: rgba(82, 168, 236, 0.75);
+-moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+.correct {
+border-color: rgba(68, 191, 68, 0.75);
+}
+
+.correct:focus {
+border-color: rgba(68, 191, 68, 0.75);
+-moz-box-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+-webkit-box-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+box-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+}
+
+.incorrect {
+border-color: rgba(191, 68, 68, 0.75);
+}
+
+.incorrect:focus {
+border-color: rgba(191, 68, 68, 0.75);
+-moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+.erreur{
+display: inline-block;
+color: red;
+}

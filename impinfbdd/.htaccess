@@ -1,0 +1,8 @@
+AuthUserFile /homez.764/docmicro/www/impinfbdd/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Identification requise !"
+AuthType Basic
+
+<Limit GET POST>
+require valid-user
+</Limit>

@@ -1,0 +1,578 @@
+body {
+background-color: #000000;
+font-family: Copperplate Gothic;
+font-size: 14px;
+font-weight: normal;
+color: white;
+background-image: url(../img/FOND.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+pre {
+font-family: Copperplate Gothic;
+font-weight: normal;
+font-size: 14px;
+}
+
+#all {
+text-align: center;
+width: 1160px;
+}
+
+header {
+display: block;
+width: 940px;
+height: 89px;
+background-image: url(../img/HEAD.png);
+background-repeat: no-repeat;
+}
+
+nav {
+margin-top: -30px;
+float: left;
+width: 220px;
+min-height: 350px;
+background-image: url(../img/NAV.png);
+background-repeat: no-repeat;
+background-color: none;
+list-style-type: none;
+}
+
+#content {
+float: left;
+width: 900px;
+height: 700px;
+background-color: none;
+background-image: url(../img/CONTENT.png);
+background-repeat: no-repeat;
+}
+
+footer {
+display: block;
+width: 940px;
+height: 28px;
+background-image: url(../img/FOOT.jpg);
+background-repeat: no-repeat;
+}
+
+/*------------------------------------------------------------------*/
+
+#batiments {
+width: 600px;
+height: 120px;
+}
+
+#nom {
+width: 200px;
+text-align: left;
+}
+
+#image {
+width: 100px;
+height: 100px;
+float: left;
+}
+
+#description {
+width: 200px;
+height: 100px;
+float: left;
+text-align: left;
+}
+
+#cred_ress {
+width: 200px;
+height: 100px;
+float: left;
+}
+
+#credit {
+width: 200px;
+height: 50px;
+}
+
+#temps {
+width: 200px;
+height: 50px;
+}
+
+#bouton {
+width: 100px;
+height: 100px;
+float: left;
+}
+
+/*------------------------------------------------------------------*/
+
+#int_nav {
+margin-top: 70px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+#int_content {
+width: 850px;
+height: 850px;
+margin-top: 70px;
+margin-left: 50px;
+margin-right: 50px;
+overflow: auto;
+}
+
+#hprofil {
+float: left;
+width: 220px;
+height: 70px;
+border: 1px solid white;
+}
+
+#hressource {
+float: left;
+width: 700px;
+height: 40px;
+font-size: 9px;
+}
+
+#hressource li {
+text-align: left;
+margin-top: 11px;
+padding-left: 20px;
+width: 70px;
+display: inline-block;
+}
+
+#hcred {
+float: right;
+border: 1px solid white;
+width: 400px;
+height: 30px;
+}
+
+#fond.galaxie1 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/1.jpg);
+}
+
+#fond.galaxie2 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/2.jpg);
+}
+
+#fond.galaxie3 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/3.jpg);
+}
+
+#fond.galaxie4 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/4.jpg);
+}
+
+#fond.galaxie5 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/5.jpg);
+}
+
+#fond.galaxie6 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/6.jpg);
+}
+
+#fond.galaxie7 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/7.jpg);
+}
+
+#fond.galaxie8 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/8.jpg);
+}
+
+#fond.galaxie9 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/9.jpg);
+}
+
+#fond.galaxie10 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/10.jpg);
+}
+
+#fond.galaxie11 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/11.jpg);
+}
+
+#fond.galaxie12 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/12.jpg);
+}
+
+#fond.galaxie13 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/13.jpg);
+}
+
+#fond.galaxie14 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/14.jpg);
+}
+
+#fond.galaxie15 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/15.jpg);
+}
+
+#fond.galaxie16 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/16.jpg);
+}
+
+#fond.galaxie17 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/17.jpg);
+}
+
+#fond.galaxie18 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/18.jpg);
+}
+
+#fond.galaxie19 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/19.jpg);
+}
+
+#fond.galaxie20 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/20.jpg);
+}
+
+#fond.galaxie21 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/21.jpg);
+}
+
+#fond.galaxie22 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/22.jpg);
+}
+
+#fond.galaxie23 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/23.jpg);
+}
+
+#fond.galaxie24 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/24.jpg);
+}
+
+#fond.galaxie25 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/25.jpg);
+}
+
+#fond.galaxie26 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/26.jpg);
+}
+
+#fond.galaxie27 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/27.jpg);
+}
+
+#fond.galaxie28 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/28.jpg);
+}
+
+#fond.galaxie29 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/29.jpg);
+}
+
+#fond.galaxie30 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/30.jpg);
+}
+
+#fond.galaxie31 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/31.jpg);
+}
+
+#fond.galaxie32 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/32.jpg);
+}
+
+#fond.galaxie33 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/33.jpg);
+}
+
+#fond.galaxie34 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/34.jpg);
+}
+
+#fond.galaxie35 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/35.jpg);
+}
+
+#fond.galaxie36 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/36.jpg);
+}
+
+#fond.galaxie37 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/37.jpg);
+}
+
+#fond.galaxie38 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/38.jpg);
+}
+
+#fond.galaxie39 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/39.jpg);
+}
+
+#fond.galaxie40 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/40.jpg);
+}
+
+#fond.galaxie41 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/41.jpg);
+}
+
+#fond.galaxie42 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/42.jpg);
+}
+
+#fond.galaxie43 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/43.jpg);
+}
+
+#fond.galaxie44 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/44.jpg);
+}
+
+#fond.galaxie45 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/45.jpg);
+}
+
+#fond.galaxie46 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/46.jpg);
+}
+
+#fond.galaxie47 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/47.jpg);
+}
+
+#fond.galaxie48 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/48.jpg);
+}
+
+#fond.galaxie49 {
+width: 700px;
+height: 700px;
+background-image: url(../img/galaxie/49.jpg);
+}
+
+#planete img {
+width: 140px;
+height: 140px;
+float: left;
+}
+
+/*---------------------------------------------------------------------*/
+
+h1 {
+font-size: 20px;
+font-weight: bold;
+color: #FF9600;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+--------------------------------------------------------------------------
+
+#erreur {
+color: red;
+}
+
+input {
+border-radius: 8px 0px 8px 0px;
+-webkit-border-radius: 8px 0px 8px 0px;
+-moz-border-radius: 8px 0px 8px 0px;
+-khtml-border-radius: 8px 0px 8px 0px;
+-o-border-radius: 8px 0px 8px 0px;
+box-shadow: 0 0 5px gray inset;
+}
+
+textarea {
+border-radius: 8px 0px 8px 0px;
+-webkit-border-radius: 8px 0px 8px 0px;
+-moz-border-radius: 8px 0px 8px 0px;
+-khtml-border-radius: 8px 0px 8px 0px;
+-o-border-radius: 8px 0px 8px 0px;
+box-shadow: 0 0 5px gray inset;
+}
+
+select {
+border-radius: 8px 0px 8px 0px;
+-webkit-border-radius: 8px 0px 8px 0px;
+-moz-border-radius: 8px 0px 8px 0px;
+-khtml-border-radius: 8px 0px 8px 0px;
+-o-border-radius: 8px 0px 8px 0px;
+box-shadow: 0 0 5px gray inset;
+}
+
+
+.col_1 {
+display: inline-block;
+padding: 3px 0px;
+width: 200px;
+min-height: 1px;
+text-align: right;
+vertical-align: top;
+}
+
+input:focus {
+border-color: rgba(82, 168, 236, 0.75);
+-moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-o-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-khtml-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+textarea:focus {
+border-color: rgba(82, 168, 236, 0.75);
+-moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-o-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-khtml-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+.correct {
+border-color: rgba(68, 191, 68, 0.75);
+}
+
+.correct:focus {
+border-color: rgba(68, 191, 68, 0.75);
+-moz-box-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+-webkit-box-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+box-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+-o-box-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+-khtmlbox-shadow: 0 0 12px rgba(68, 191, 68, 0.5);
+}
+
+.incorrect {
+border-color: rgba(191, 68, 68, 0.75);
+}
+
+.incorrect:focus {
+border-color: rgba(191, 68, 68, 0.75);
+-moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+-khtml-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+-o-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+.erreur{
+display: inline-block;
+color: red;
+}
+
+input[type="submit"] {
+font-size: 16px;
+background-color: #2ACCCA;
+color: black;
+font-family: Copperplate Gothic;
+}
+
+input[type="button"] {
+font-size: 16px;
+background-color: #2ACCCA;
+color: black;
+font-family: Copperplate Gothic;
+}
+
+input[type="file"] {
+font-size: 16px;
+background-color: #2ACCCA;
+color: black;
+font-family: Copperplate Gothic;
+}
+
+/*----------------------------------------------------------------------*/

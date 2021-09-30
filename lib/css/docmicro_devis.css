@@ -1,0 +1,104 @@
+body {
+font-family: AR BLANCA;
+font-size: 16px;
+}
+
+#all {
+float: left;
+width: 720px;
+height: 1060px;
+}
+
+#info_perso {
+margin-top: 10px;
+list-style-type: none;
+float: left;
+width: 300px;
+
+}
+
+.petit {
+font-size: 10px;
+}
+
+.bleu{
+color: rgb(23, 57, 85);
+}
+
+.blanc{
+color: white;
+}
+
+#logo {
+float: left;
+margin-top: -10px;
+margin-left: 80px;
+width: 300px;
+}
+
+#info_client {
+list-style-type: none;
+margin-left: 400px;
+float: left;
+width: 300px;
+margin-bottom: 20px;
+text-align: right;
+}
+
+#num_devis {
+float: left;
+width: 200px;
+}
+
+#date_devis {
+float: left;
+width: 200px;
+margin-left: 500px;
+margin-top: -20px;
+text-align: right;
+}
+
+#prestation {
+float: left;
+margin-top: 10px;
+width: 700px;
+height: 585px;
+border: 1px solid black;
+list-style-type: none;
+}
+
+#info_legal {
+float: left;
+width: 720px;
+margin-top: 20px;
+}
+
+#cadre {
+float: left;
+width: 780px;
+}
+
+#info {
+float: left;
+width: 350px;
+margin-top: 10px;
+list-style-type: none;
+
+}
+
+#signature {
+float: left;
+width: 350px;
+list-style-type: none;
+margin-top: 10px;
+
+}
+
+#bas_page {
+margin-top: 120px;
+float: left;
+width: 720px;
+text-align: center;
+}
+
+

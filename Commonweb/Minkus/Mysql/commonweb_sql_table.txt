@@ -1,0 +1,203 @@
+CREATE TABLE `commonweb_actu_comm_like` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `id_com_actu` int(32) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_categorie_list` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` CHAR(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_sous_categorie_list` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` CHAR(20) NOT NULL,
+  `id_cat` INT(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_rencontre_perso` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `m` int(1) DEFAULT NULL,
+  `cm` int(2) DEFAULT NULL,
+  `physique` varchar(20) DEFAULT NULL,
+  `region` varchar(25) DEFAULT NULL,
+  `ville` varchar(50) DEFAULT NULL,
+  `etat_civil` varchar(20) DEFAULT NULL,
+  `orientation` varchar(20) DEFAULT NULL,
+  `motivation` varchar(20) DEFAULT NULL,
+  `photo` longtext,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `pseudo_id` (`pseudo_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_rencontre_menu` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` char(16) NOT NULL,
+  `lien` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_bon_plan_vote` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_bon_plan` int(10) NOT NULL,
+  `note` int(1) NOT NULL,
+  `commentaire` longtext DEFAULT NULL,
+  `date` char(10) DEFAULT NULL,
+  `chemin` longtext DEFAULT NULL,
+  `mini_chemin` longtext DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_tchat` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `message` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_album_like` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `id_album` int(32) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_menu` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` char(16) NOT NULL,
+  `lien` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_groupe` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_actu_comm` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_actu` int(10) NOT NULL,
+  `message` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_actu_like` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `id_actu` int(32) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_bon_plan_like` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `id_bon_plan` int(32) NOT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_actu` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `titre` char(20) NOT NULL,
+  `message` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime DEFAULT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_album` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` char(20) NOT NULL,
+  `mini_chemin` longtext NOT NULL,
+  `chemin` longtext NOT NULL,
+  `created` datetime NOT NULL,
+  `groupe` longtext NOT NULL,
+  `commentaire` longtext DEFAULT NULL,  
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_amis` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pseudo_amis` char(16) NOT NULL,
+  `groupe` longtext DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `accept` int(1) DEFAULT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_bon_plan` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` varchar(16) DEFAULT NULL,
+  `adresse` tinytext,
+  `ville` varchar(35) DEFAULT NULL,
+  `cp` char(8) DEFAULT NULL,
+  `categorie` varchar(30) DEFAULT NULL,
+  `sous_categorie` varchar(30) DEFAULT NULL,
+  `complement_adresse` varchar(80) DEFAULT NULL,
+  `telephone` char(10) DEFAULT NULL,
+  `site_web` varchar(50) DEFAULT NULL,
+  `image` longtext,
+  `created` datetime DEFAULT NULL,
+  `date_fin` char(10) DEFAULT NULL,
+  `like` int(32) DEFAULT NULL,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_perso` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` varchar(16) DEFAULT NULL,
+  `prenom` varchar(16) DEFAULT NULL,
+  `adresse` tinytext,
+  `ville` varchar(35) DEFAULT NULL,
+  `cp` char(8) DEFAULT NULL,
+  `complement_adresse` varchar(80) DEFAULT NULL,
+  `telephone_perso` char(10) DEFAULT NULL,
+  `telephone_pro` char(10) DEFAULT NULL,
+  `site_web` varchar(50) DEFAULT NULL,
+  `situation_pro` varchar(30) DEFAULT NULL,
+  `situation_amour` varchar(20) DEFAULT NULL,
+  `proverbe` LONGTEXT DEFAULT NULL,
+  `mot_du_jour` LONGTEXT DEFAULT NULL,
+  `email_secourt` varchar(50) DEFAULT NULL,
+  `avatar` longtext,
+  `pseudo_id` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `pseudo_id` (`pseudo_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_securite` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `hote` varchar(15) NOT NULL,
+  `pseudo_id` varchar(16) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE `commonweb_user` (
+  `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
+  `hash` char(32) NOT NULL,
+  `pseudo` varchar(16) NOT NULL,
+  `mdp` char(32) NOT NULL,
+  `jour` int(2) NOT NULL,
+  `mois` text NOT NULL,
+  `annee` char(4) NOT NULL,
+  `genre` char(5) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `created` datetime NOT NULL,
+  `email_validation` int(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;

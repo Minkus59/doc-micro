@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.doc-micro.fr/</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/Assistance/</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/Formation/</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/Web-creation/</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/Devis/</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/Contact/</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/Mentions-legales/</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/?theme=normal</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/?theme=automne</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/?theme=halloween</loc>
+</url>
+<url>
+  <loc>http://www.doc-micro.fr/?compa=ancien</loc>
+</url>
+</urlset>
